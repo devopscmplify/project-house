@@ -5,7 +5,8 @@
   "main": "src/index.html",
   "scripts": {
     "start": "live-server src",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d src",
+    "build": "cp -r src/* dist/"
   },
   "keywords": [
     "github",
