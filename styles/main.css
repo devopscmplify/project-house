@@ -392,3 +392,39 @@ footer {
     color: #232946;
 }
 
+/* Social Media Block Title */
+.social-icons-block {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.social-title {
+    font-size: 1.1rem;
+    color: #232946;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 18px 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.15);
+}
+
+.social-icons svg {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
