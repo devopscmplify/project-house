@@ -24,6 +24,9 @@ header {
     background: #232946;
     color: #fff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar {
@@ -427,4 +430,145 @@ footer {
     display: block;
     width: 28px;
     height: 28px;
+}
+
+.profile-card-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(35,41,70,0.07);
+    padding: 24px 32px;
+    margin: 32px 0;
+}
+
+.profile-card-row .profile-picture {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #eebbc3;
+    box-shadow: 0 2px 8px rgba(35,41,70,0.10);
+    background: #fff;
+}
+
+.profile-info-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 140px;
+    max-width: 220px;
+}
+
+.profile-info-col .profile-name {
+    font-size: 1.2rem;
+    color: #232946;
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.profile-info-col .profile-title {
+    color: #eebbc3;
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+}
+
+.profile-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #eebbc3;
+    margin: 10px 0 12px 0;
+}
+
+.profile-info-col .social-icons-block {
+    margin: 0;
+}
+
+.profile-contact-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 180px;
+    margin-left: auto;
+}
+
+.profile-contact-col .website-status {
+    margin: 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.profile-contact-col .profile-location,
+.profile-contact-col .profile-email {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #232946;
+    font-size: 1rem;
+}
+
+.profile-contact-col .profile-email a {
+    color: #232946;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.resume-download {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 18px;
+    background: #232946;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+    font-size: 1rem;
+}
+
+.resume-download:hover {
+    background: #eebbc3;
+    color: #232946;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3ec300;
+    box-shadow: 0 0 6px #3ec30088;
+    margin-right: 4px;
+}
+
+.website-status.offline .status-dot {
+    background: #e63946;
+    box-shadow: 0 0 6px #e6394688;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+    .profile-card-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 18px 8px;
+    }
+    .profile-info-col,
+    .profile-contact-col {
+        align-items: flex-start;
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .profile-contact-col {
+        margin-left: 0;
+    }
 }
