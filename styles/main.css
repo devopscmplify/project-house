@@ -444,8 +444,8 @@ footer {
 }
 
 .profile-card-row .profile-picture {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     margin: 0;
     border-radius: 50%;
     object-fit: cover;
